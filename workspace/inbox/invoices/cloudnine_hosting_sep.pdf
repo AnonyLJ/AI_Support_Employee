@@ -1,0 +1,52 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 572 >>
+stream
+BT
+/F1 11 Tf
+15 TL
+50 790 Td
+(CloudNine Hosting Inc.) Tj T*
+(Vendor: CloudNine Hosting Inc.) Tj T*
+(500 Market Street, San Francisco, CA 94105) Tj T*
+() Tj T*
+(INVOICE) Tj T*
+() Tj T*
+(Invoice Number: CN-INV-7781) Tj T*
+(Invoice Date:   2026-09-25) Tj T*
+(Due Date:       2026-10-25) Tj T*
+() Tj T*
+(Description                          Amount) Tj T*
+(Dedicated server \(Sep 2026\)        1,100.00) Tj T*
+(Backup storage 2 TB                  140.00) Tj T*
+() Tj T*
+(Subtotal                           1,240.00) Tj T*
+(Total Due:                     USD 1,240.00) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000864 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+932
+%%EOF

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="card">
+  <h1>Nimbus Retail portal</h1>
+  <p>{{ invoice_count }} invoices in the <a href="{{ url_for('invoices') }}">Invoice System</a> &middot;
+     {{ customer_count }} customers in the <a href="{{ url_for('customers') }}">CRM</a></p>
+</div>
+<h2>Audit log (latest 25 changes)</h2>
+<table>
+  <tr><th>Time</th><th>System</th><th>Changed by</th><th>Action</th><th>Record</th><th>Details</th></tr>
+  {% for row in audit %}
+  <tr><td>{{ row.ts }}</td><td>{{ row.system }}</td><td>{{ row.actor }}</td><td>{{ row.action }}</td>
+      <td>{{ row.record_id }}</td><td><code>{{ row.details }}</code></td></tr>
+  {% else %}
+  <tr><td colspan="6">No changes yet.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,23 @@
+KAVERI ELECTRICALS
+Supplier: Kaveri Electricals
+No. 14, 3rd Cross, Peenya Industrial Area, Bengaluru 560058
+Phone: 080-4123 9876
+
+INVOICE
+
+Invoice Number : KE-2026-0871
+Date of Issue  : 15 Aug 2026
+Payment Due    : 14 Sep 2026
+
+Billed To: Nimbus Retail Pvt. Ltd., 88 Residency Road, Bengaluru 560025
+
+Description                     Qty    Unit Price         Amount
+Emergency exit lights            12      1,400.00      16,800.00
+Distribution board servicing      1      4,200.00       4,200.00
+
+Sub Total                                              21,000.00
+CGST 9%                                                 1,890.00
+SGST 9%                                                 1,890.00
+Total Amount Payable                                 ₹ 24,780.00
+
+Amount in words: Rupees Twenty Four Thousand Seven Hundred Eighty Only

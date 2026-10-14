@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Nimbus Portal{% endblock %} - Nimbus Retail</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f5f6f8; color: #1d2330; }
+    nav { background: #1d2330; padding: 12px 24px; }
+    nav a { color: #fff; margin-right: 20px; text-decoration: none; font-weight: 600; }
+    main { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+    table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e3e6ea; vertical-align: top; }
+    th { background: #eef0f3; }
+    .card { background: #fff; padding: 16px 20px; border-radius: 6px; margin-bottom: 20px; }
+    .flash { padding: 10px 14px; border-radius: 4px; margin-bottom: 12px; background: #e3f6e8; }
+    .errors { padding: 10px 14px; border-radius: 4px; margin-bottom: 12px; background: #fde4e4; }
+    form.stacked label { display: block; margin-top: 12px; font-weight: 600; }
+    form.stacked input, form.stacked select, form.stacked textarea { width: 360px; padding: 6px; }
+    form.stacked button { margin-top: 16px; padding: 8px 18px; }
+    dl { display: grid; grid-template-columns: 160px 1fr; gap: 6px 12px; }
+    dt { font-weight: 600; }
+    code { font-size: 12px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('home') }}">Dashboard</a>
+    <a href="{{ url_for('invoices') }}">Invoice System</a>
+    <a href="{{ url_for('customers') }}">CRM</a>
+  </nav>
+  <main>
+    {% for message in get_flashed_messages() %}
+      <div class="flash" role="status">{{ message }}</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

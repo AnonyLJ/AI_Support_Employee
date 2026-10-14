@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}CRM{% endblock %}
+{% block content %}
+<h1>CRM - Customers</h1>
+<div class="card">
+  <form method="get" action="{{ url_for('customers') }}">
+    <label for="q">Search by customer ID, name or email</label>
+    <input id="q" name="q" value="{{ q }}">
+    <button type="submit">Search</button>
+  </form>
+</div>
+<table>
+  <tr><th>Customer ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Address</th><th>Plan</th><th>Status</th></tr>
+  {% for c in customers %}
+  <tr><td><a href="{{ url_for('customer_detail', customer_id=c.id) }}">{{ c.id }}</a></td><td>{{ c.name }}</td>
+      <td>{{ c.email }}</td><td>{{ c.phone }}</td><td>{{ c.address }}</td><td>{{ c.plan }}</td><td>{{ c.status }}</td></tr>
+  {% else %}
+  <tr><td colspan="7">No customers found{% if q %} for "{{ q }}"{% endif %}.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

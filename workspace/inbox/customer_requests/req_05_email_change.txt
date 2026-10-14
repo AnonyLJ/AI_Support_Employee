@@ -1,0 +1,10 @@
+From: Sneha Iyer <sneha.iyer@example.com>
+Date: 2026-10-12 11:05
+Subject: Change my registered email
+
+Hi,
+
+Customer ID: CUST-1004. Please change my email address to sneha.iyer.work@example.org as I no longer use this one.
+
+Thank you,
+Sneha

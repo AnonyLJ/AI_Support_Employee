@@ -1,0 +1,25 @@
+KAVERI ELECTRICALS
+Supplier: Kaveri Electricals
+No. 14, 3rd Cross, Peenya Industrial Area, Bengaluru 560058
+Phone: 080-4123 9876
+
+INVOICE
+
+Invoice Number : KE-2026-1045
+Date of Issue  : 08 Oct 2026
+Payment Due    : 07 Nov 2026
+
+Billed To: Nimbus Retail Pvt. Ltd., 88 Residency Road, Bengaluru 560025
+
+Description                     Qty    Unit Price         Amount
+LED panel light 2x2              40      1,150.00      46,000.00
+Copper wiring (90 m coil)        10      3,200.00      32,000.00
+Installation & labour             1      8,500.00       8,500.00
+
+Sub Total                                              86,500.00
+CGST 9%                                                 7,785.00
+SGST 9%                                                 7,785.00
+Total Amount Payable                               ₹ 1,02,070.00
+
+Amount in words: Rupees One Lakh Two Thousand Seventy Only
+Please pay by bank transfer to A/C 001234567890, IFSC KAVB0000123.

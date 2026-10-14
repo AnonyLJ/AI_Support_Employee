@@ -1,0 +1,10 @@
+From: Aarav Mehta <aarav.mehta@example.com>
+Date: 2026-10-11 18:30
+Subject: Change of address
+
+Hello,
+
+I have shifted to Pune. Please update my address to: Flat 302, Lake View Apartments, Baner, Pune 411045.
+
+Regards,
+Aarav

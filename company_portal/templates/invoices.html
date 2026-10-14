@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Invoice System{% endblock %}
+{% block content %}
+<h1>Invoice System</h1>
+<div class="card">
+  <form method="get" action="{{ url_for('invoices') }}">
+    <label for="q">Search by invoice number or vendor</label>
+    <input id="q" name="q" value="{{ q }}">
+    <button type="submit">Search</button>
+  </form>
+  <p><a href="{{ url_for('new_invoice') }}">+ Enter a new invoice</a></p>
+</div>
+<table>
+  <tr><th>Invoice number</th><th>Vendor</th><th>Amount</th><th>Due date</th><th>Status</th><th>Entered at</th></tr>
+  {% for inv in invoices %}
+  <tr><td><a href="{{ url_for('invoice_detail', number=inv.invoice_number) }}">{{ inv.invoice_number }}</a></td>
+      <td>{{ inv.vendor or '' }}</td><td>{{ inv.currency }} {{ inv.amount }}</td>
+      <td>{{ inv.due_date }}</td><td>{{ inv.status }}</td><td>{{ inv.created_at }}</td></tr>
+  {% else %}
+  <tr><td colspan="6">No invoices found{% if q %} for "{{ q }}"{% endif %}.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

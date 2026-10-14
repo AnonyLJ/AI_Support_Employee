@@ -1,0 +1,18 @@
+ACME OFFICE SUPPLIES PVT. LTD.
+Vendor: Acme Office Supplies Pvt. Ltd.
+GSTIN: 29ABCDE1234F1Z5
+
+TAX INVOICE
+Invoice No.: AOS/2026/0912
+Invoice Date: 12/09/2026
+Due Date: 12/10/2026
+
+Bill To: Nimbus Retail Pvt. Ltd., Bengaluru
+
+Item                          Qty      Rate        Amount
+A4 Paper (500 sheets)          20    350.00      7,000.00
+Printer toner                   4  2,250.00      9,000.00
+
+Subtotal                                       16,000.00
+GST @ 18%                                       2,880.00
+Grand Total                                Rs. 18,880.00

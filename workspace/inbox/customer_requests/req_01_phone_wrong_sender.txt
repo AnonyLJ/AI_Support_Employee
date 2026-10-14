@@ -1,0 +1,10 @@
+From: Rohan Gupta <rohan.gupta@example.com>
+Date: 2026-10-08 10:02
+Subject: Update phone number for my account
+
+Hello,
+
+Please update the mobile number on customer ID CUST-1004 to 99887 76655.
+
+Thanks,
+Rohan

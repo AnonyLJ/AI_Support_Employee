@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Edit {{ c.id }}{% endblock %}
+{% block content %}
+<h1>Edit customer {{ c.id }} ({{ c.name }})</h1>
+{% if errors %}
+<div class="errors" role="alert">
+  <strong>The changes were not saved:</strong>
+  <ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+<form class="stacked card" method="post" action="{{ url_for('update_customer', customer_id=c.id) }}">
+  <label for="email">Email</label>
+  <input id="email" name="email" value="{{ form.email }}">
+  <label for="phone">Phone</label>
+  <input id="phone" name="phone" value="{{ form.phone }}">
+  <label for="address">Address</label>
+  <textarea id="address" name="address" rows="2">{{ form.address }}</textarea>
+  <label for="plan">Plan</label>
+  <select id="plan" name="plan">
+    {% for p in plans %}<option value="{{ p }}" {% if form.plan == p %}selected{% endif %}>{{ p }}</option>{% endfor %}
+  </select>
+  <label for="status">Account status</label>
+  <select id="status" name="status">
+    {% for s in statuses %}<option value="{{ s }}" {% if form.status == s %}selected{% endif %}>{{ s }}</option>{% endfor %}
+  </select>
+  <button type="submit">Save changes</button>
+</form>
+<a href="{{ url_for('customer_detail', customer_id=c.id) }}">Cancel</a>
+{% endblock %}
